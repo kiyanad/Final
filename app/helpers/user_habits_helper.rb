@@ -1,0 +1,2 @@
+module UserHabitsHelper
+end

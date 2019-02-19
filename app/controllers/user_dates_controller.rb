@@ -1,0 +1,4 @@
+class UserDatesController < ApplicationController
+
+
+end
