@@ -1,0 +1,789 @@
+/* *
+**
+***
+BEGIN SHELF
+***
+**
+* */
+
+html {
+	min-height: 100%;
+	background: #ffc3aa;
+	font-family: 'Gentium Book Basic', serif;
+	color: #552835;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.shelf {
+  width: 59em;
+  border-bottom: 5em solid #d97a53;
+  position: relative;
+  top: 176px;
+  left: 29%;
+  margin-top: -5em;
+  margin-left: -15em;
+  padding: 0 3em;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: flex-end;
+  align-items: flex-end;
+}
+
+.shelf::after,
+.shelf::before {
+  content: '';
+  display: block;
+  width: 1em;
+  height: 3em;
+  position: relative;
+  bottom: -3em;
+  background: #732b23;
+}
+
+.shelf::before {
+	left: 1em;
+  top: 128px;
+}
+
+.shelf::after {
+  right: 1em;
+  top: 128px;}
+
+.shadow {
+	position: absolute;
+	bottom: -2.7em;
+	height: 1.7em;
+	left: 1em;
+	right: 1em;
+	z-index: -1;
+	background: -webkit-gradient(linear, left top, left bottom, from(#aa4a46), to(#ffc3aa));
+	background: linear-gradient(to bottom, #aa4a46 0%, #ffc3aa 100%);
+  background-image: url("https://img.freepik.com/free-photo/wooden-plank-textured-background-material_53876-33591.jpg?size=626&ext=jpg")
+
+}
+
+.bookend {
+	width: 3em;
+	height: 4em;
+	position: relative;
+}
+
+.bookend::before {
+	height: .75em;
+	background: #a84033;
+	width: 100%;
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: 0;
+}
+
+.bookend::after {
+	height: 100%;
+	width: .75em;
+	content: '';
+	display: block;
+	position: absolute;
+	background: #a84033;
+}
+
+.bookend.left::after{
+	right: 0;
+}
+
+
+.books {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: end;
+	    -ms-flex-align: end;
+	        align-items: flex-end;
+}
+
+.book {
+	overflow: hidden;
+	width: 2em;
+	height: 9em;
+	background: #907d41;
+	position: relative;
+}
+
+.book::before {
+	height: .5em;
+	width: 100%;
+	background: rgba(255, 255, 255, .15);
+	content: '';
+	display: block;
+	position: absolute;
+	top: 15%;
+}
+
+.book::after {
+	height: .5em;
+	width: 100%;
+	background: rgba(255, 255, 255, .15);
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: 5%;
+}
+
+
+.book:first-child {
+	height: 10em;
+	width: 1.7em;
+	background: #f3888e;
+}
+
+.book:last-child {
+	height: 10em;
+	width: 1.5em;
+	background: #552835;
+}
+
+a {
+	color: #552835;
+}
+
+/* *
+**
+***
+END SHELF
+***
+**
+* */
+
+/* *
+**
+***
+BEGIN BOOKS
+***
+**
+* */
+
+
+.top {
+  background-color: #fff;
+  background-image: -webkit-repeating-linear-gradient(left, transparent, transparent 21%, #aaa 21%, #aaa 25%, transparent 25%, transparent 46%, #aaa 46%, #aaa 50%, transparent 50%);
+  background-image: repeating-linear-gradient(90deg, transparent, transparent 21%, #aaa 21%, #aaa 25%, transparent 25%, transparent 46%, #aaa 46%, #aaa 50%, transparent 50%);
+  background-size: 16px 16px;
+  width: 100px;
+  height: 102px;
+  border-left: 14px solid green;
+  border-right: 14px solid green;
+  border-radius: 10px 9px 11px 10px;
+  position: relative;
+  top: 18px;
+  z-index: -1;
+  -webkit-transform: rotateX(-176deg) translateY(5px);
+  transform: rotateX(-176deg) translateY(5px);
+  right: 0px;
+  visibility: hidden
+}
+
+.book-1 {
+  width: 57px;
+  height: 319px;
+  background: white;
+  border: 2px solid black;
+  border-radius: 5px 5px 3px 4px;
+  -webkit-transform: translateZ(193px);
+  transform: translateZ(193px);
+  top: 1px;
+  position: relative;
+}
+
+.book-2 {
+  width: 71px;
+  height: 220px;
+  background: white;
+  border: 2px solid black;
+  border-radius: 5px 5px 3px 3px;
+  -webkit-transform: translateZ(193px);
+  transform: translateZ(193px);
+
+}
+.book-3 {
+  width: 66px;
+  height: 264px;
+  background: white;
+  border: 2px solid;
+  border-radius: 5px 5px 3px 3px;
+  -webkit-transform: translateZ(193px);
+  transform: translateZ(193px);
+}
+
+.book-4 {
+  width: 51px;
+  height: 323px;
+  background: white;
+  border: 2px solid;
+  border-radius: 5px 5px 3px 3px;
+  -webkit-transform: translateZ(193px);
+  transform: translateZ(193px);
+
+}
+
+.book-5 {
+  width: 52px;
+  height: 222px;
+  background: white;
+  border: 2px solid;
+  border-radius: 5px 5px 3px 3px;
+  -webkit-transform: translateZ(193px);
+  transform: translateZ(193px);
+
+}
+
+
+.book-6 {
+  width: 74px;
+  height: 368px;
+  background: white;
+  border: 2px solid;
+  border-radius: 5px 5px 3px 3px;
+  -webkit-transform: translateZ(193px);
+  transform: translateZ(193px);
+}
+
+.book-7 {
+  width: 86px;
+  height: 331px;
+  background: white;
+  border: 2px solid;
+  border-radius: 5px 5px 3px 3px;
+  -webkit-transform: translateZ(193px);
+  transform: translateZ(193px);
+}
+
+
+.book-8 {
+  width: 69px;
+  height: 461px;
+  background: white;
+  border: 2px solid black;
+  border-radius: 6px 6px 3px 3px;
+  -webkit-transform: translateZ(193px);
+  transform: translateZ(193px);
+}
+.book-9 {
+  width: 48px;
+  height: 374px;
+  background: white;
+  border: 2px solid;
+  border-radius: 5px 5px 3px 3px;
+  -webkit-transform: translateZ(193px);
+  transform: translateZ(193px);
+}
+.book-10 {
+  width: 48px;
+  height: 428px;
+  background: white;
+  border: 2px solid;
+  border-radius: 6px 6px 3px 3px;
+  -webkit-transform: translateZ(193px);
+  transform: rotate(10deg);
+  margin-left: 35px;
+  margin-right: 21px;
+}
+.book-11 {
+  width: 39px;
+  height: 255px;
+  background: white;
+  border: 2px solid;
+  border-radius: 5px 5px 3px 3px;
+  -webkit-transform: translateZ(193px);
+  transform: rotate(-14deg);
+  margin-left: 28px;
+  margin-right: 29px;
+  position: relative;
+  top: 1px;
+}
+.book-12 {
+  width: 49px;
+  height: 255px;
+  background: white;
+  border: 2px solid;
+  border-radius: 5px 5px 3px 3px;
+  -webkit-transform: translateZ(193px);
+  transform: rotate(-7deg);
+  margin-left: 12px;
+  margin-right: 14px;
+  position: relative;
+  top: -2px;
+}
+
+/* *
+**
+***
+END BOOKS
+***
+**
+* */
+
+
+/* *
+**
+***
+BEGIN LABELS***
+**
+* */
+
+.label-0 {
+  width: 100%;
+  background: white;
+  height: 27px;
+  position: relative;
+  bottom: -16px;
+  border-bottom: 2px solid;
+  border-top: 2px solid;
+  }
+
+.label-1 {
+  width: 98%;
+  background: white;
+  height: 19px;
+  position: relative;
+  top: 14px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  left: 1px;
+}
+
+.label-2 {
+  width: 98%;
+  background: white;
+  height: 20px;
+  position: relative;
+  bottom: -264px;
+  border-top: 2px solid black;
+border-bottom: 2px solid black;
+left: 1px
+  }
+
+
+.label-3 {
+  background: white;
+  height: 58px;
+  position: relative;
+  top: 15px;
+  /* background: black; */
+  width: 43px;
+  height: 43px;
+  border-radius: 64px;
+  border: 2px solid;
+  left: 9px;
+}
+.label-3-a {
+  width: 98%;
+  background: white;
+  height: 20px;
+  position: relative;
+  bottom: -178px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  left: 1px;
+  }
+
+.label-4 {
+  width: 100%;
+  background: white;
+  height: 15px;
+  position: relative;
+  bottom: -24px;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+    }
+
+.label-5 {
+  width: 100%;
+  background: white;
+  height: 15px;
+  position: relative;
+  bottom: -271px;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+}
+
+.label-6 {
+  width: 60%;
+  background: white;
+  height: 164px;
+  position: relative;
+  bottom: -33px;
+  left: 9px;
+  border: 2px solid;
+
+}
+
+.label-7 {
+  width: 100%;
+  height: 35px;
+  position: relative;
+  border-bottom: 2px solid;
+  bottom: -300px;
+  border-top: 2px solid;
+}
+
+
+
+.label-8 {
+  width: 48%;
+  background: white;
+  height: 245px;
+  position: relative;
+  bottom: -48px;
+  left: 21px;
+  border: 2px solid;
+  border-radius: 7px;
+}
+
+.label-9 {
+  width: 48%;
+  background: yellow;
+  height: 245px;
+  position: relative;
+  bottom: -48px;
+  left: 27px;
+}
+
+.label-10{
+  background: white;
+  height: 58px;
+  position: relative;
+  top: 15px;
+  /* background: black; */
+  width: 27px;
+  height: 284px;
+  border-radius: 64px;
+  border: 2px solid;
+  left: 7px;
+  top: 39px;
+}
+
+/* *
+**
+***
+END LABELS
+***
+**
+* */
+
+/* *
+**
+***
+BEGIN TITLES
+***
+**
+* */
+@font-face {
+  font-family: BookFont;
+  src: url('../HabitTracker/HabitFonts/Book.ttf');
+}
+@font-face {
+  font-family: BookFont2;
+  src: url('../HabitTracker/HabitFonts/Book2.otf');
+}
+.title{
+  font-family: BookFont2;
+  font-size: 127px;
+  position: absolute;
+  top: -116px;
+  left: 14px;
+}
+.title-1{
+transform: rotate(90deg) translate(12px, -50%);
+white-space: nowrap;
+text-align: center;
+position: relative;
+right: 13px;
+top: 36px;
+font-size: 20px;
+font-family: BookFonts;
+background-color: #666666;
+-webkit-background-clip: text;
+-moz-background-clip: text;
+background-clip: text;
+color: transparent;
+text-shadow: rgba(245,245,245,0.5) 0px 0px 0px;
+color: goldenrod;
+}
+
+.title-2{
+  -webkit-transform: rotate(90deg) translate(12px, -50%);
+  transform: rotate(90deg) translate(12px, -50%);
+  white-space: nowrap;
+  position: relative;
+  right: 14px;
+  top: 20px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 20px;
+  font-family: BookFonts;
+  background-color: #666666;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: rgba(245,245,245,0.5) 3px 3px 0px;
+  color: black;
+}
+.title-3{
+  transform: rotate(90deg) translate(12px, -50%);
+  white-space: nowrap;
+  position: relative;
+  right: 11px;
+  top: -6px;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  right: 14px;
+  top: 20px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 20px;
+  font-family: BookFonts;
+  background-color: #666666;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: rgba(245,245,245,0.5) 0px 0px 0px;
+  color: goldenrod;
+}
+
+.title-4{
+  transform: rotate(90deg) translate(12px, -50%);
+white-space: nowrap;
+text-align: center;
+position: relative;
+right: 15px;
+top: 36px;
+vertical-align: middle;
+font-size: 20px;
+font-family: BookFonts;
+background-color: #666666;
+-webkit-background-clip: text;
+-moz-background-clip: text;
+background-clip: text;
+color: transparent;
+text-shadow: rgba(245,245,245,0.5) 0px 0px 0px;
+color: goldenrod;
+}
+
+.title-5{
+  transform: rotate(90deg) translate(12px, -50%);
+white-space: nowrap;
+text-align: center;
+position: relative;
+right: 14px;
+top: -109px;
+font-size: 20px;
+font-family: BookFonts;
+background-color: #666666;
+-webkit-background-clip: text;
+-moz-background-clip: text;
+background-clip: text;
+color: transparent;
+text-shadow: rgba(245,245,245,0.5) 0px 0px 0px;
+color: black;
+
+}
+
+.title-6{
+  transform: rotate(90deg) translate(12px, -50%);
+white-space: nowrap;
+text-align: center;
+position: relative;
+right: 15px;
+top: 36px;
+font-size: 20px;
+font-family: BookFonts;
+background-color: #666666;
+-webkit-background-clip: text;
+-moz-background-clip: text;
+background-clip: text;
+color: transparent;
+text-shadow: rgba(245,245,245,0.5) 0px 0px 0px;
+color: goldenrod;
+}
+
+.title-7{
+  transform: rotate(90deg) translate(12px, -50%);
+white-space: nowrap;
+text-align: center;
+position: relative;
+right: 15px;
+top: -160px;
+font-size: 20px;
+font-family: BookFonts;
+background-color: #666666;
+-webkit-background-clip: text;
+-moz-background-clip: text;
+background-clip: text;
+color: transparent;
+text-shadow: rgba(245,245,245,0.5) 0px 0px 0px;
+color: black;
+}
+
+.title-8{
+  transform: rotate(90deg) translate(12px, -50%);
+white-space: nowrap;
+text-align: center;
+position: relative;
+right: 14px;
+top: 50px;
+font-size: 25px;
+font-family: BookFonts;
+background-color: #666666;
+-webkit-background-clip: text;
+-moz-background-clip: text;
+background-clip: text;
+color: transparent;
+text-shadow: rgba(245,245,245,0.5) 0px 0px 0px;
+color: goldenrod;
+}
+
+.title-9{
+  transform: rotate(90deg) translate(12px, -50%);
+white-space: nowrap;
+text-align: center;
+position: relative;
+right: 15px;
+top: -202px;
+font-size: 20px;
+font-family: BookFonts;
+background-color: #666666;
+-webkit-background-clip: text;
+-moz-background-clip: text;
+background-clip: text;
+color: transparent;
+text-shadow: rgba(245,245,245,0.5) 0px 0px 0px;
+color: black;
+}
+
+.title-10{
+  transform: rotate(90deg) translate(12px, -50%);
+white-space: nowrap;
+text-align: center;
+position: relative;
+right: 15px;
+top: 111px;
+font-size: 20px;
+font-family: BookFonts;
+background-color: #666666;
+-webkit-background-clip: text;
+-moz-background-clip: text;
+background-clip: text;
+color: transparent;
+text-shadow: rgba(245,245,245,0.5) 0px 0px 0px;
+color: goldenrod;
+  }
+
+.title-11{
+  transform: rotate(90deg) translate(12px, -50%);
+white-space: nowrap;
+text-align: center;
+position: relative;
+right: 12px;
+top: 47px;
+font-size: 15px;
+font-family: BookFonts;
+background-color: #666666;
+-webkit-background-clip: text;
+-moz-background-clip: text;
+background-clip: text;
+color: transparent;
+text-shadow: rgba(245,245,245,0.5) 0px 0px 0px;
+color: goldenrod;
+}
+
+.title-12{
+  transform: rotate(90deg) translate(12px, -50%);
+  white-space: nowrap;
+  position: relative;
+  right: 11px;
+  top: 20px;
+  text-align: center;
+vertical-align: middle;
+font-size: 20px;
+font-family: BookFonts;
+background-color: #666666;
+-webkit-background-clip: text;
+-moz-background-clip: text;
+background-clip: text;
+color: transparent;
+text-shadow: rgba(245,245,245,0.5) 0px 0px 0px;
+color: goldenrod;
+}
+
+
+
+
+
+
+
+/* *
+**
+***
+END TITLES
+***
+**
+* */
+
+.realshelf{
+  width: 947px;
+height: 80px;
+color: blue;
+background-color: blue;
+position: relative;
+top: 637px;
+left: 200px;
+z-index: 2;
+background-image: url(https://img.freepik.com/free-photo/wooden-plank-textured-background-material_53876-33591.jpg?size=626&ext=jpg);
+}
+
+.container2 {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container2:hover .image {
+  opacity: 0.3;
+}
+
+.container2:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}

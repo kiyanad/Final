@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css?family=Pacifico|Staatliches");
+@font-face {
+  font-family: IndexFont;
+  src: url('../Fonts/Index.ttf');
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+html {
+  font-size: 16px;
+}
+
+body {
+  width: 100%;
+  background: #a593e0;
+  display: flex;
+  padding: 60px;
+}
+
+.paper {
+  background: white;
+  background-image: linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px), linear-gradient(#eee 0.1em, transparent 0.1em);
+  background-size: 100% 1.2em;
+  width: 480px;
+  height: auto;
+  padding: 30px 30px 30px 110px;
+  margin: 0 auto;
+  -webkit-transform: rotate(-4deg);
+          transform: rotate(-4deg);
+  box-shadow: 4px 16px 8px rgba(86, 98, 112, 0.1);
+}
+.paper .title {
+  width: 100%;
+  position: relative;
+}
+
+.paper .title .uppercase {
+  font-family: "IndexFont";
+  font-size: 5em;
+  color: #30a9de;
+  position: relative;
+  z-index: 2;
+  top: 15px;
+  left: -30px;
+  margin-left: 5px;
+  text-shadow: 6px 6px 0 white, -3px 1px 0 white, -4px 3.5px 0 white, -2.5px 5px 0 white, 0px 6px 0 white;
+  -webkit-transform: rotate(-8deg);
+          transform: rotate(-8deg);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+}
+.paper .title .doodle {
+  position: absolute;
+  border: 3px solid #566270;
+  border-top-width: 1px;
+  border-right-width: 2px;
+  border-bottom-width: 4px;
+  border-left-width: 2px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50% 40% 45% 50%/55% 50% 40% 30%;
+  top: 0;
+  right: 0;
+  bottom: auto;
+  left: auto;
+  background: white;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9-B4zvV1rY3lVv0jaPFapNRLLWaCEqPsCjiDDG2wR3mdZ0HcR);
+  background-size: 70px 76px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.paper .grid-container {
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: ". . . . . . ." ". . . . . . ." ". . . . . . ." ". . . . . . ." ". . . . . . .";
+  border: 0;
+  grid-gap: 2px;
+}
+
+.paper .grid-container .cell2 {
+  height: 27px;
+  line-height: 20px;
+  border: 2px solid #566270;
+  text-align: center;
+  font-family: "Staatliches";
+  color: #566270;
+  text-shadow: 1px 1px 0 white, 2px 2px 0 #30a9de;
+  background: white;
+  float: left;
+  width: 78%;
+  position: relative;
+  top: 10px;
+  font-size: 23px;
+ border-bottom: '5px solid '
+}
+
+.paper .grid-container .cell3 {
+  height: 27px;
+  line-height: 26px;
+  border: 2px solid #566270;
+  text-align: center;
+  font-family: "Staatliches";
+  color: #566270;
+  text-shadow: 1px 1px 0 white, 2px 2px 0 #30a9de;
+  background: white;
+  float: left;
+  width: 20%;
+  top: 10px;
+  position: relative;
+  font-size: 23px;
+}
+.paper .grid-container .cell.x {
+  background-image: repeating-linear-gradient(-45deg, transparent, transparent 3px, #e53a40 3px, #e53a40 6px);
+}
+.paper .photo {
+  margin: 0 auto;
+  width: 220px;
+  -webkit-transform: rotate(8deg);
+          transform: rotate(8deg);
+  margin-bottom: 15px;
+  position: relative;
+}
+.paper .photo > img {
+  width: 220px;
+  height: auto;
+  display: block;
+  position: relative;
+bottom: -16px;
+}
+.paper .photo .tape {
+  width: 120px;
+  height: 40px;
+  background: rgba(246, 179, 82, 0.4);
+  position: absolute;
+  top: auto;
+  right: 0;
+  bottom: -34px;
+  left: auto;
+  -webkit-transform: rotate(-8deg) translate3d(25%, 0, 0);
+          transform: rotate(-8deg) translate3d(25%, 0, 0);
+}
+.paper .heart {
+  background-color: #efdc05;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: auto;
+  right: auto;
+  bottom: 130px;
+  left: 110px;
+  -webkit-transform: rotate(-70deg);
+          transform: rotate(-70deg);
+}
+.paper .heart::before, .paper .heart::after {
+  content: "";
+  background-color: #efdc05;
+  border-radius: 50%;
+  height: 30px;
+  position: absolute;
+  width: 30px;
+}
+.paper .heart::before {
+  top: -15px;
+  left: 0;
+}
+.paper .heart::after {
+  top: 0;
+  left: 15px;
+}
+
+.indexDiv{
+  left: 85%;
+position: relative;
+}
