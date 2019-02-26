@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../HabitCss/HT.css';
+import '../../CSS/Calender.css';
 import 'wired-elements';
 import TopHabit from "./TopHabit"
 import DayHeader from "../HabitFuncComponents/DayHeader"
@@ -8,9 +9,13 @@ import Form from "./Form"
 import postIt from "../Images/postIt.png"
 import 'wired-elements';
 import dateFns from "date-fns";
+import dry from "../Images/book.png"
 
 
 
+
+
+// RENDERS DAY HEADER && GRID FUNC COMPONENT //
 
 
 class HabitTracker extends Component {
@@ -32,6 +37,7 @@ class HabitTracker extends Component {
         userhabits: habits.user_habit
       })
       )
+
       // END OF FETCH //
 
   // FETCH TO GET LIST OF ALL HABITS
@@ -120,12 +126,12 @@ render () {
       <Grid allHabits={this.state.habits} key={habit.id} habit= {habit} selected={this.state.selected} current={this.state.currentMonth} onClick={this.onDateClick} userhabits={this.state.userhabits}/>
     )
   const dateFormat = "MMMM YYYY";
-
+console.log(this.state.userhabits);
     return (
       <div className="HabitBackground" >
-      <img src = {postIt} />
+      <img className="board" src="http://www.stickpng.com/assets/thumbs/5b06c18efad1cae04539afdf.png"/>
+      <Form allHabits={this.state.userhabits}/>
 
-      <Form />
         <h1 className="title">[Habit"  |  -Tracker!#~</h1>
         <div id="grid" onClick={(e) => {this.clickHandler(e)}}>
           <div id="choices">
@@ -154,7 +160,7 @@ render () {
             </div>
             <div id="daysHeader" />
             <div id="tableContainer">
-              <DayHeader habits={this.state.habits}/>
+              <DayHeader habits={this.state.habits} userhabits={this.state.userhabits}/>
               <div id="habitHeader">
                 <div id="weekContainer">
                   {row}
@@ -172,7 +178,9 @@ export default HabitTracker
 
 
 
+// <img src = {postIt} />
 
+// <Form />
 
 
 

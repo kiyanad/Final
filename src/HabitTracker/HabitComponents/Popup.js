@@ -19,7 +19,7 @@ render(){
   return(
     <div className="popup">
         <span className="popuptext show" id="myPopup">
-        <form onSubmit= {(e)=>{this.nun(e)}}>
+        <form className="habitform" onSubmit= {(e)=>{this.nun(e)}}>
         {form}
           <button>
             Submit

@@ -1,6 +1,7 @@
 import React from "react";
 import dateFns from "date-fns";
 import '../CSS/Book.css';
+import NewBook from './NewBook.js'
 
 
 class Book extends React.Component {
@@ -176,7 +177,7 @@ clickHandler = () => {
     console.log(this.state);
     return(
 <div>
-<p className="title"> Need to Reads...</p>
+<p className="maintitle"> Need to Reads...</p>
 
 <div class="realshelf" />
 

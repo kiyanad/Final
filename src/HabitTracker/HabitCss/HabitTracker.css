@@ -23,9 +23,10 @@ width: 100%;
   color: black;
   text-shadow: 2px 3px 3px #dfe8ea;
   font-size: 142px;
-  position: relative;
-  left: 100px;
+  position: absolute;
+  left: 25%;
   font-weight: normal;
+  top: 12%;
 }
 
 .social {
@@ -86,8 +87,7 @@ height: 5px;
   justify-content: normal;
   margin-bottom: 0.25em;
   position: relative;
-  left: 65px;
-}
+    left: -9px;}
 
 #daysHeader {
   margin-left: 1.25em;
@@ -193,21 +193,25 @@ height: 5px;
   /* background-image: url(https://digitalsynopsis.com/wp-content/uploads/2017/07/beautiful-color-ui-gradients-backgrounds-sweet-morning.png);
 background-repeat: no-repeat;
 background-size: cover; */
-height: 1000px;
-width: 1700px;
-position: relative;
+height: 114%;
+width: 101%;
+position: absolute;
+top: 1%;
+left: 0%;
+
 
 }
 
 .HabitCard{
   background-image: url(https://www.lumen.com.mx/Content/Images/productPics/12445.jpg);
-  height: 600px;
-  width: 70%;
-  box-shadow: 5px 11px 19px black;
-  -webkit-transform: rotate(4deg);
-  transform: rotate(4deg);
-  position: relative;
-  left: 426px;
+      height: auto;
+      width: auto;
+      box-shadow: 5px 11px 19px black;
+      -webkit-transform: rotate(4deg);
+      transform: rotate(4deg);
+      position: absolute;
+      left: 18%;
+      top: 29%;
 
 }
 
@@ -308,7 +312,9 @@ top: -26px;
 }
 
 .habitHeader2{
-  margin-bottom: 7px
+  margin-bottom: 7px;
+  margin-left: 76px;
+
 }
 
 .postIt{
@@ -330,7 +336,47 @@ img {
 
 .form{text-align: -webkit-left;
     position: relative;
-    left: 88px;
+    left: 0px;
     transform: rotate(-22deg);
-    top: 180px;
+    top: 0px;
   }
+
+  .habitform {
+    position: absolute;
+    top: 510px;
+    left: 90px;
+        font-family: BookFont2;
+        font-size: 25px;
+        -webkit-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+
+  }
+  .pclick{
+    text-indent: 0.666667em;
+
+  }
+
+  .pname{
+    font-size: 33px;
+    left: -18px;
+position: relative;
+
+  }
+
+.board{
+  z-index: -1;
+    width: 320px;
+    height: 290px;
+    left: 13px;
+    position: relative;
+    top: 453px;
+}
+
+.nameput{
+  width: 137px;
+height: 32px;
+font-size: 21px;
+font-family: BookFont2;
+margin-left: -9px;
+text-align: center;
+}

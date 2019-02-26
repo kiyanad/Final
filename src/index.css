@@ -12,3 +12,22 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.nav-link {
+  width: '100px',
+  padding: '12px',
+  margin: '0 6px 6px',
+  background: 'blue',
+  textDecoration: 'none',
+  color: 'white',
+}
+
+ /* a:hover {
+  color: #32673f;
+} */
+
+
+  a:hover {
+  cursor: pointer;
+  color: red;
+  }

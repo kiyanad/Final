@@ -9,16 +9,15 @@ function Box(props){
 
     const monthEnd = dateFns.endOfMonth(monthStart);
 
-    var result = differenceInDays(
+    var result1 = differenceInDays(
       monthEnd, monthStart
     )
+    var result = result1 + 1
 
     let monthLength = Array.from({length: result}, (x,i) => i);
-// debugger
-// console.log(props.allHabits);
-// debugger
-    let eachDay = monthLength.map(day => <BigBox key={day} day= {day} monthNum={props.monthNum} userhabits={props.userhabits} habit={props.habit} allHabits={props.allHabits}/>)
 
+    let eachDay = monthLength.map(day => <BigBox key={day} day= {day} monthNum={props.monthNum} userhabits={props.userhabits} habit={props.habit} allHabits={props.allHabits}/>)
+// debugger
     let day = monthStart;
 
   return (

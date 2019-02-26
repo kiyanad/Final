@@ -1,0 +1,267 @@
+.back {
+  background-color: #4F4E68;
+      background-image: url(https://cdn2.vectorstock.com/i/1000x1000/27/46/realistic-work-desk-organization-top-view-with-vector-7422746.jpg);
+      background-size: cover;
+      width: 237%;
+      position: relative;
+      height: 116%;
+      top: -10%;
+      z-index: -2;
+      left: -7%;
+}
+.loginbook {
+  background-size: cover;
+      position: absolute;
+      top: 24%;
+      bottom: 0%;
+      left: 0%;
+      right: -2%;
+      margin: auto;
+      width: 13.5%;
+      height: 19%;
+      perspective: 70rem;
+      transform: rotate(180deg);
+
+
+}
+.logincover {
+  background-color: #36354e;
+  transform: rotateY(0deg);
+  width: 26.25rem;
+  height: 27.5rem;
+}
+.loginpage {
+  top: 0.25rem;
+  left: 0.25rem;
+  background-color: #e9e6c4;
+  transform: rotateY(0deg);
+  width: 26rem;
+  height: 27rem;
+  text-align: right;
+  font-size: 8px;
+  color: #777;
+  font-family: monospace;
+}
+.loginpage::before, .loginpage::after {
+  display: block;
+  /* border-top: 1px dashed rgba(0, 0, 0, 0.3); */
+  content: "";
+  padding-bottom: 1rem;
+}
+.logincover, .loginpage {
+  position: absolute;
+  padding: 1rem;
+  transform-origin: 100% 0;
+  border-radius: 5px 0 0 5px;
+  box-shadow: inset 3px 0px 20px rgba(0, 0, 0, 0.2),
+    0px 0px 15px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  top: -296px;
+left: -301px;
+}
+.logincover.turn {
+  animation: bookCover 5s forwards;
+}
+.loginpage.turn {
+  animation: bookOpen 5s forwards;
+}
+.loginpage:nth-of-type(6) {
+  animation-delay: 0.05s;
+}
+.loginpage:nth-of-type(5) {
+  animation-delay: 0.33s
+}
+.loginpage:nth-of-type(4) {
+  animation-delay: 0.66s;
+}
+.loginpage:nth-of-type(3) {
+  animation: bookOpen-150deg 3s forwards;
+  animation-delay: 0.99s;
+}
+.loginpage:nth-of-type(2) {
+  animation: bookOpen-30deg 3s forwards;
+  animation-delay: 1.2s;
+}
+.loginpage:nth-of-type(1) {
+  animation: bookOpen-55deg 3s forwards;
+  animation-delay: 1.25s;
+}
+@keyframes bookOpen {
+  30% { z-index: 999 }
+  100% {  transform: rotateY(180deg);
+    z-index: 999;}
+}
+@keyframes bookCover {
+  30% { z-index: 999 }
+  100% {  transform: rotateY(180deg);
+    z-index: 1;}
+}
+@keyframes bookOpen150deg {
+  30% { z-index: 999 }
+  100% {  transform: rotateY(150deg);
+    z-index: 999;}
+}
+@keyframes bookOpen55deg {
+  30% { z-index: 999 }
+  100% {  transform: rotateY(55deg);
+    z-index: 999;}
+}
+@keyframes bookOpen30deg {
+  50% { z-index: 999 }
+  100% {  transform: rotateY(30deg);
+    z-index: 999;}
+}
+
+.loginpic {
+  z-index: -1;
+width: 118px;
+height: 114px;
+left: 141px;
+position: relative;
+top: 216px;
+transform: rotate(180deg);
+}
+
+.log{
+  transform: rotateX(180deg);
+top: 391px;
+position: absolute;
+left: 195px;
+}
+
+.sign{
+  transform: rotateX(180deg);
+      top: 355px;
+      left: 110px;
+      font-size: 56px;
+      position: absolute;
+}
+
+.signform{
+  transform: rotateX(180deg);
+  top: 2px;
+position: absolute;
+left: 31px;
+}
+
+.logform{
+  transform: rotateX(180deg);
+  top: 91px;
+position: absolute;
+left: 31px;
+}
+
+.redbook {
+  z-index: -1;
+  width: 20%;
+  height: 46%;
+  left: 4%;
+  position: absolute;
+  top: 46%;
+  visibility: hidden;
+
+
+}
+
+.cellphone{
+  height: 18%;
+width: 5.7%;
+background: cornflowerblue;
+position: absolute;
+top: 61.27%;
+left: 25.8%;
+cursor: pointer;
+
+}
+
+.smiley{
+  width: 62px;
+  height: 67px;
+  left: 27.7%;
+  position: absolute;
+  top: 70%;
+  z-index: 2;
+  cursor: pointer;
+
+}
+
+.smiley2{
+  z-index: 2;
+  width: 62px;
+  height: 67px;
+  left: 72.2%;
+  position: absolute;
+  top: 47%;
+  transform: rotate(147deg);
+  cursor: pointer;
+
+}
+.signup{
+transform: rotate(-15deg);
+font-size: 27px;
+font-weight: 900;
+bottom: 32%;
+position: absolute;
+left: 24%;
+cursor: pointer;
+color: wheat;
+
+
+}
+
+.login{
+  bottom: 53.5%;
+  position: absolute;
+  right: 25.8%;
+  -webkit-transform: rotate(-15deg);
+  transform: rotate(-36deg);
+  font-size: 27px;
+  font-weight: normal;
+  cursor: pointer;
+      color: dimgray;
+
+}
+.bluebook{
+  z-index: -1;
+width: 305px;
+height: 400px;
+left: 887px;
+position: relative;
+top: 669px;
+transform: rotate(20deg);
+
+}
+
+.lognote{
+  height: 14%;
+width: 7%;
+background: transparent;
+position: absolute;
+right: 24%;
+bottom: 44%;
+transform: rotate(-36deg);
+cursor: pointer;
+
+}
+
+.click{
+  top: 68%;
+  left: 26%;
+  position: absolute;
+  z-index: 2;
+  transform: rotate(-16deg);
+  font-size: 69%;
+  cursor: pointer;
+
+}
+
+.click2{
+  position: absolute;
+    top: 45.7%;
+    right: 25.4%;
+    transform: rotate(-34deg);
+    font-size: 14px;
+    cursor: pointer;
+
+
+}

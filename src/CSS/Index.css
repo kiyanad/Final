@@ -25,8 +25,8 @@ body {
   background: white;
   background-image: linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px), linear-gradient(#eee 0.1em, transparent 0.1em);
   background-size: 100% 1.2em;
-  width: 480px;
-  height: auto;
+  width: 691px;
+  height: 832px;
   padding: 30px 30px 30px 110px;
   margin: 0 auto;
   -webkit-transform: rotate(-4deg);
@@ -40,12 +40,12 @@ body {
 
 .paper .title .uppercase {
   font-family: "IndexFont";
-  font-size: 5em;
+  font-size: 1.4em;
   color: #30a9de;
   position: relative;
   z-index: 2;
   top: 15px;
-  left: -30px;
+  left: -140px;
   margin-left: 5px;
   text-shadow: 6px 6px 0 white, -3px 1px 0 white, -4px 3.5px 0 white, -2.5px 5px 0 white, 0px 6px 0 white;
   -webkit-transform: rotate(-8deg);
@@ -63,8 +63,8 @@ body {
   width: 90px;
   height: 90px;
   border-radius: 50% 40% 45% 50%/55% 50% 40% 30%;
-  top: 0;
-  right: 0;
+  top: 83px;
+  right: 95px;
   bottom: auto;
   left: auto;
   background: white;
@@ -131,6 +131,9 @@ body {
   display: block;
   position: relative;
 bottom: -16px;
+top: 61px;
+left: 162px;
+
 }
 .paper .photo .tape {
   width: 120px;
@@ -138,8 +141,8 @@ bottom: -16px;
   background: rgba(246, 179, 82, 0.4);
   position: absolute;
   top: auto;
-  right: 0;
-  bottom: -34px;
+  right: -38px;
+  bottom: 59px;
   left: auto;
   -webkit-transform: rotate(-8deg) translate3d(25%, 0, 0);
           transform: rotate(-8deg) translate3d(25%, 0, 0);

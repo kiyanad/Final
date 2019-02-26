@@ -6,7 +6,8 @@ BEGIN SHELF
 **
 * */
 
-html {
+
+body {
 	min-height: 100%;
 	background: #ffc3aa;
 	font-family: 'Gentium Book Basic', serif;
@@ -22,8 +23,8 @@ html {
   width: 59em;
   border-bottom: 5em solid #d97a53;
   position: relative;
-  top: 176px;
-  left: 29%;
+	top: 289px;
+	left: 90%;
   margin-top: -5em;
   margin-left: -15em;
   padding: 0 3em;
@@ -31,6 +32,8 @@ html {
   display: flex;
   -webkit-align-items: flex-end;
   align-items: flex-end;
+	border-image: url(https://img.freepik.com/free-photo/wooden-plank-textured-background-material_53876-33591.jpg?size=626&ext=jpg) 102;
+
 }
 
 .shelf::after,
@@ -489,19 +492,19 @@ BEGIN TITLES
   font-family: BookFont2;
   src: url('../HabitTracker/HabitFonts/Book2.otf');
 }
-.title{
+.maintitle{
   font-family: BookFont2;
   font-size: 127px;
   position: absolute;
-  top: -116px;
   left: 14px;
+	top: 239px;
+
 }
 .title-1{
 transform: rotate(90deg) translate(12px, -50%);
 white-space: nowrap;
 text-align: center;
 position: relative;
-right: 13px;
 top: 36px;
 font-size: 20px;
 font-family: BookFonts;
@@ -512,6 +515,8 @@ background-clip: text;
 color: transparent;
 text-shadow: rgba(245,245,245,0.5) 0px 0px 0px;
 color: goldenrod;
+right: 12px;
+
 }
 
 .title-2{
@@ -519,7 +524,7 @@ color: goldenrod;
   transform: rotate(90deg) translate(12px, -50%);
   white-space: nowrap;
   position: relative;
-  right: 14px;
+
   top: 20px;
   text-align: center;
   vertical-align: middle;
@@ -532,17 +537,19 @@ color: goldenrod;
   color: transparent;
   text-shadow: rgba(245,245,245,0.5) 3px 3px 0px;
   color: black;
+	right: 12px;
+
 }
 .title-3{
   transform: rotate(90deg) translate(12px, -50%);
   white-space: nowrap;
   position: relative;
-  right: 11px;
+
   top: -6px;
   text-align: center;
   vertical-align: middle;
   position: relative;
-  right: 14px;
+
   top: 20px;
   text-align: center;
   vertical-align: middle;
@@ -555,6 +562,8 @@ color: goldenrod;
   color: transparent;
   text-shadow: rgba(245,245,245,0.5) 0px 0px 0px;
   color: goldenrod;
+	right: 12px;
+
 }
 
 .title-4{
@@ -562,7 +571,6 @@ color: goldenrod;
 white-space: nowrap;
 text-align: center;
 position: relative;
-right: 15px;
 top: 36px;
 vertical-align: middle;
 font-size: 20px;
@@ -574,6 +582,8 @@ background-clip: text;
 color: transparent;
 text-shadow: rgba(245,245,245,0.5) 0px 0px 0px;
 color: goldenrod;
+right: 12px;
+
 }
 
 .title-5{
@@ -581,7 +591,6 @@ color: goldenrod;
 white-space: nowrap;
 text-align: center;
 position: relative;
-right: 14px;
 top: -109px;
 font-size: 20px;
 font-family: BookFonts;
@@ -592,6 +601,8 @@ background-clip: text;
 color: transparent;
 text-shadow: rgba(245,245,245,0.5) 0px 0px 0px;
 color: black;
+right: 12px;
+
 
 }
 
@@ -600,7 +611,6 @@ color: black;
 white-space: nowrap;
 text-align: center;
 position: relative;
-right: 15px;
 top: 36px;
 font-size: 20px;
 font-family: BookFonts;
@@ -611,6 +621,8 @@ background-clip: text;
 color: transparent;
 text-shadow: rgba(245,245,245,0.5) 0px 0px 0px;
 color: goldenrod;
+right: 12px;
+
 }
 
 .title-7{
@@ -618,7 +630,6 @@ color: goldenrod;
 white-space: nowrap;
 text-align: center;
 position: relative;
-right: 15px;
 top: -160px;
 font-size: 20px;
 font-family: BookFonts;
@@ -629,6 +640,8 @@ background-clip: text;
 color: transparent;
 text-shadow: rgba(245,245,245,0.5) 0px 0px 0px;
 color: black;
+right: 12px;
+
 }
 
 .title-8{
@@ -636,7 +649,6 @@ color: black;
 white-space: nowrap;
 text-align: center;
 position: relative;
-right: 14px;
 top: 50px;
 font-size: 25px;
 font-family: BookFonts;
@@ -647,6 +659,8 @@ background-clip: text;
 color: transparent;
 text-shadow: rgba(245,245,245,0.5) 0px 0px 0px;
 color: goldenrod;
+right: 12px;
+
 }
 
 .title-9{
@@ -654,7 +668,6 @@ color: goldenrod;
 white-space: nowrap;
 text-align: center;
 position: relative;
-right: 15px;
 top: -202px;
 font-size: 20px;
 font-family: BookFonts;
@@ -665,6 +678,8 @@ background-clip: text;
 color: transparent;
 text-shadow: rgba(245,245,245,0.5) 0px 0px 0px;
 color: black;
+right: 12px;
+
 }
 
 .title-10{
@@ -672,7 +687,6 @@ color: black;
 white-space: nowrap;
 text-align: center;
 position: relative;
-right: 15px;
 top: 111px;
 font-size: 20px;
 font-family: BookFonts;
@@ -683,6 +697,8 @@ background-clip: text;
 color: transparent;
 text-shadow: rgba(245,245,245,0.5) 0px 0px 0px;
 color: goldenrod;
+right: 12px;
+
   }
 
 .title-11{
@@ -690,7 +706,6 @@ color: goldenrod;
 white-space: nowrap;
 text-align: center;
 position: relative;
-right: 12px;
 top: 47px;
 font-size: 15px;
 font-family: BookFonts;
@@ -701,13 +716,15 @@ background-clip: text;
 color: transparent;
 text-shadow: rgba(245,245,245,0.5) 0px 0px 0px;
 color: goldenrod;
+right: 12px;
+
 }
 
 .title-12{
   transform: rotate(90deg) translate(12px, -50%);
   white-space: nowrap;
   position: relative;
-  right: 11px;
+
   top: 20px;
   text-align: center;
 vertical-align: middle;
@@ -720,6 +737,8 @@ background-clip: text;
 color: transparent;
 text-shadow: rgba(245,245,245,0.5) 0px 0px 0px;
 color: goldenrod;
+right: 12px;
+
 }
 
 
@@ -737,16 +756,18 @@ END TITLES
 * */
 
 .realshelf{
-  width: 947px;
-height: 80px;
-color: blue;
-background-color: blue;
-position: relative;
-top: 637px;
-left: 200px;
-z-index: 2;
-background-image: url(https://img.freepik.com/free-photo/wooden-plank-textured-background-material_53876-33591.jpg?size=626&ext=jpg);
-}
+	width: 982px;
+	    height: 87px;
+	    color: blue;
+	    background-color: blue;
+	    position: relative;
+	    top: 644px;
+	    left: 200px;
+	    z-index: 2;
+	    background-image: url(https://img.freepik.com/free-photo/wooden-plank-textured-background-material_53876-33591.jpg?size=626&ext=jpg);
+	    background-size: cover;
+			visibility: hidden
+		}
 
 .container2 {
   position: relative;

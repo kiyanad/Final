@@ -3,8 +3,10 @@ import HabitRow from "./HabitRow"
 
 
 function DayHeader(props) {
-    let row =  props.habits.map(habit =>
-        <HabitRow key={habit.id} habit= {habit} />
+  // debugger
+  // console.log(props.userhabits);
+    let row =  props.userhabits.map(habit =>
+        <HabitRow key={habit.id} habit= {habit} allhabits= {props.habits}/>
       )
 
       return (

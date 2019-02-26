@@ -79,7 +79,7 @@ console.log(this.props.date);
   // END OF HABITS NAME //
     return(
       <div>
-        {habitName !== undefined ? <div><p> {habitName.name}: </p> <div id={`checked-${this.props.habit.id}`} className="checked" onClick={this.clickHandler} /> <br /></div> : null }
+        {habitName !== undefined ? <div><p className="pname"> {habitName.name}: </p> <div id={`checked-${this.props.habit.id}`} className="checked" onClick={this.clickHandler} /> <br /></div> : null }
       </div>
     )
   }

@@ -184,9 +184,9 @@ left: 102px;
 }
 
 .HabitBackground {
-  /* background-image: url(https://digitalsynopsis.com/wp-content/uploads/2017/07/beautiful-color-ui-gradients-backgrounds-sweet-morning.png);
+background-image: url("https://digitalsynopsis.com/wp-content/uploads/2017/07/beautiful-color-ui-gradients-backgrounds-sweet-morning.png");
 background-repeat: no-repeat;
-background-size: cover; */
+background-size: cover; 
 height: 1000px;
 width: 1700px;
 position: relative;

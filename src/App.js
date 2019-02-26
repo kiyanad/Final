@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import './App.css';
+// import './App.css';
 // import Last from "./Components/Last"
-import Book from "./Components/Book"
+import NewBook from "./Components/NewBook"
 
 
 
-import Calendar from "./Components/Calander"
+import Calendar from "./Components/NewBook"
 
 class App extends Component {
 
@@ -59,7 +59,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-      <Book />
+      <NewBook/>
       </div>
     );
   }
