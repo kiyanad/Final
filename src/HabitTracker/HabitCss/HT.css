@@ -19,9 +19,11 @@ body {
   color: black;
   text-shadow: 2px 3px 3px #dfe8ea;
   font-size: 84px;
-
+  left: 5vw;
   font-weight: normal;
+  top: 10vw;
 }
+
 
 .social {
   position: absolute;
@@ -53,7 +55,7 @@ left: 102px;
 }
 
 #choices {
-  display: flex;
+  display: inline-grid;
 }
 #choices div {
   position: relative;
@@ -83,7 +85,7 @@ left: 102px;
   justify-content: normal;
   margin-bottom: 0.25em;
   position: relative;
-  left: -2px;
+  left: -42px;
 }
 
 #daysHeader {
@@ -93,15 +95,17 @@ left: 102px;
 }
 
 .habitHeader {
-  height: 1.25em;
-  font-size: 21px;
-  padding: 1px 0 0 1px;
+  height: auto;
+  font-size: 1px;
+  padding: 1px 0 0px 1px;
   text-align: right;
   font-weight: bold;
   position: relative;
-  right: 9px;
-  top: 15px;
-  margin-bottom: 10px;
+  top: -2vw;
+  margin-bottom: 1vw;
+  right: 4vw;
+  width: 9vw;
+
 }
 
 .dayHeader {
@@ -150,10 +154,17 @@ left: 102px;
 
   #weekContainer {
     flex-direction: column;
+    margin-left: 1vw;
+margin-right: -3vw;
   }
 
   #habitHeader {
     flex-direction: column;
+    width: 629%;
+    left: -7px;
+margin-right: 2vw;
+
+
   }
 
   .dayHeader,
@@ -184,9 +195,8 @@ left: 102px;
 }
 
 .HabitBackground {
-background-image: url("https://digitalsynopsis.com/wp-content/uploads/2017/07/beautiful-color-ui-gradients-backgrounds-sweet-morning.png");
 background-repeat: no-repeat;
-background-size: cover; 
+background-size: cover;
 height: 1000px;
 width: 1700px;
 position: relative;

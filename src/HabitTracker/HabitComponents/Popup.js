@@ -8,20 +8,24 @@ class Popup extends Component {
     done: true
   }
   nun = (e) => {
-    // e.preventDefault()
+    e.preventDefault()
     this.setState({
       done: !this.state.done
     })
+    var popup = document.getElementById("myPopup");
+popup.classList.toggle("show");
   }
 render(){
-  console.log(this.state.done);
-  let form = this.props.userhabits.map(habit => <NewHabit day={this.props.day}key={habit.id} habit={habit} all={this.props.allHabits} date={this.props.date} clickHandler={this.boxHandler}/>)
+  // debugger
+  // console.log(this.state.done);
+  let form = this.props.userhabits.map(habit => <NewHabit new={this.props.new} day={this.props.day}key={habit.id} habit={habit}  date={this.props.date} clickHandler={this.boxHandler}/>)
+// console.log(form)
   return(
     <div className="popup">
         <span className="popuptext show" id="myPopup">
-        <form className="habitform" onSubmit= {(e)=>{this.nun(e)}}>
+        <form className="instanceform" onSubmit= {(e)=>{this.nun(e)}}>
         {form}
-          <button>
+          <button className="popsub">
             Submit
           </button>
         </form>

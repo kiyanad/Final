@@ -1,34 +1,51 @@
+body{
+  background-color: saddlebrown
+}
+
 .back {
   background-color: #4F4E68;
-      background-image: url(https://cdn2.vectorstock.com/i/1000x1000/27/46/realistic-work-desk-organization-top-view-with-vector-7422746.jpg);
-      background-size: cover;
-      width: 237%;
-      position: relative;
-      height: 116%;
-      top: -10%;
-      z-index: -2;
-      left: -7%;
+  background-image: url(https://cdn2.vectorstock.com/i/1000x1000/27/46/realistic-work-desk-organization-top-view-with-vector-7422746.jpg);
+  background-size: cover;
+  height: 100%;
+  z-index: -2;
+  left: -39%;
+  top: 0vw;
+  left: 0vw;
+  position: absolute;
+  width: 136]1%;
+  /* overflow: hidden; */
+  width: 100%;
+    background-size: 100% 135%;
 }
 .loginbook {
-  background-size: cover;
+
+      background-size: cover;
       position: absolute;
-      top: 24%;
+      top: 20%;
       bottom: 0%;
-      left: 0%;
+      left: 3vw;
       right: -2%;
       margin: auto;
-      width: 13.5%;
-      height: 19%;
+      width: 103%;
+      height: 74%;
+      -webkit-perspective: 70rem;
       perspective: 70rem;
+      -webkit-transform: rotate(180deg);
       transform: rotate(180deg);
+      z-index: 1;
 
 
 }
-.logincover {
+span.logincover {
   background-color: #36354e;
+  -webkit-transform: rotateY(0deg);
   transform: rotateY(0deg);
-  width: 26.25rem;
-  height: 27.5rem;
+  width: 18vw;
+  height: 20vw;
+  left: 34vw;
+  z-index: 2;
+  top: 9%;
+
 }
 .loginpage {
   top: 0.25rem;
@@ -41,29 +58,50 @@
   font-size: 8px;
   color: #777;
   font-family: monospace;
+  top: 50px;
+    height: 217px;
+    width: 175px;
+    left: 538px;
 }
 .loginpage::before, .loginpage::after {
   display: block;
   /* border-top: 1px dashed rgba(0, 0, 0, 0.3); */
   content: "";
   padding-bottom: 1rem;
+  width: 10px;
+
 }
 .logincover, .loginpage {
   position: absolute;
-  padding: 1rem;
-  transform-origin: 100% 0;
-  border-radius: 5px 0 0 5px;
-  box-shadow: inset 3px 0px 20px rgba(0, 0, 0, 0.2),
-    0px 0px 15px rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
-  top: -296px;
-left: -301px;
+      padding: 1rem;
+      -webkit-transform-origin: 100% 0;
+      transform-origin: 100% 0;
+      border-radius: 5px 0 0 5px;
+      box-shadow: inset 3px 0px 20px rgba(0, 0, 0, 0.2), 0px 0px 15px rgba(0, 0, 0, 0.1);
+      box-sizing: border-box;
+      top: 10%;
+      left: 35vw;
+      height: 19vw;
+      z-index: 3;
+      width: 17vw;
+
 }
 .logincover.turn {
   animation: bookCover 5s forwards;
+  top: 9%;
+  height: 20vw;
+  width: 17vw;
+  z-index: -1;
+  left: 35vw;
+
 }
 .loginpage.turn {
   animation: bookOpen 5s forwards;
+  top: 10%;
+  z-index: 3;
+  height: 19vw;
+  width: 16.7vw;
+  left: 35vw;
 }
 .loginpage:nth-of-type(6) {
   animation-delay: 0.05s;
@@ -116,9 +154,9 @@ left: -301px;
   z-index: -1;
 width: 118px;
 height: 114px;
-left: 141px;
-position: relative;
-top: 216px;
+left: 5vw;
+position: absolute;
+top: 10vw;
 transform: rotate(180deg);
 }
 
@@ -130,25 +168,36 @@ left: 195px;
 }
 
 .sign{
-  transform: rotateX(180deg);
-      top: 355px;
+  /* transform: rotateX(180deg);
+      top: 86px;
       left: 110px;
-      font-size: 56px;
-      position: absolute;
+      font-size: 28px;
+      position: absolute; */
+      -webkit-transform: rotate(180deg);
+/* transform: rotateX(180deg); */
+
+top: 80%;
+left: 36%;
+font-size: 2vw;
+position: absolute;
 }
 
 .signform{
   transform: rotateX(180deg);
-  top: 2px;
-position: absolute;
-left: 31px;
+  top: 1vh;
+  position: absolute;
+  left: 1vh;
+  z-index: -2;
+  height: 18vw;
+
 }
 
 .logform{
   transform: rotateX(180deg);
-  top: 91px;
-position: absolute;
-left: 31px;
+  top: 0vw;
+  position: absolute;
+  left: 1vw;
+  height: 18vw;
 }
 
 .redbook {
@@ -164,22 +213,23 @@ left: 31px;
 }
 
 .cellphone{
-  height: 18%;
-width: 5.7%;
-background: cornflowerblue;
-position: absolute;
-top: 61.27%;
-left: 25.8%;
-cursor: pointer;
-
+  height: 15.9%;
+  width: 5.5vw;
+  background: cornflowerblue;
+  position: absolute;
+  top: 54.5%;
+  left: 25.3vw;
+  /* bottom: -15px; */
+  cursor: pointer;
+  z-index: 2;
 }
 
 .smiley{
-  width: 62px;
-  height: 67px;
-  left: 27.7%;
+  width: 66%;
+  height: 39%;
+  left: 25%;
   position: absolute;
-  top: 70%;
+  top: 7vh;
   z-index: 2;
   cursor: pointer;
 
@@ -187,40 +237,43 @@ cursor: pointer;
 
 .smiley2{
   z-index: 2;
-  width: 62px;
-  height: 67px;
-  left: 72.2%;
-  position: absolute;
-  top: 47%;
-  transform: rotate(147deg);
-  cursor: pointer;
+      width: 2.6vw;
+      height: 3.7vh;
+      left: 35%;
+      position: absolute;
+      -webkit-transform: rotate(147deg);
+      transform: rotate(-2deg);
+      cursor: pointer;
+      top: 56%;
 
 }
 .signup{
-transform: rotate(-15deg);
-font-size: 27px;
-font-weight: 900;
-bottom: 32%;
-position: absolute;
-left: 24%;
-cursor: pointer;
-color: wheat;
+  transform: rotate(-15deg);
+  font-size: 0.7vw;
+  font-weight: 900;
+  top: 3vh;
+  position: absolute;
+  cursor: pointer;
+  color: wheat;
+  z-index: 2;
+  left: 0.5vw;
+  text-indent: 0em;
 
 
 }
 
 .login{
-  bottom: 53.5%;
+  bottom: 56%;
   position: absolute;
-  right: 25.8%;
+  left: 19%;
   -webkit-transform: rotate(-15deg);
-  transform: rotate(-36deg);
-  font-size: 27px;
+  transform: rotate(-8deg);
+  font-size: 1.7vh;
   font-weight: normal;
   cursor: pointer;
-      color: dimgray;
+  color: dimgray;
+  text-indent: 0px;}
 
-}
 .bluebook{
   z-index: -1;
 width: 305px;
@@ -233,35 +286,238 @@ transform: rotate(20deg);
 }
 
 .lognote{
-  height: 14%;
-width: 7%;
-background: transparent;
-position: absolute;
-right: 24%;
-bottom: 44%;
-transform: rotate(-36deg);
-cursor: pointer;
 
+      height: 13%;
+      width: 9%;
+      background: transparent;
+      position: relative;
+      left: 68%;
+      -webkit-transform: rotate(-36deg);
+      transform: rotate(-36deg);
+      cursor: pointer;
+      top: 19%;
+      z-index: 2;
 }
 
 .click{
-  top: 68%;
-  left: 26%;
-  position: absolute;
-  z-index: 2;
-  transform: rotate(-16deg);
-  font-size: 69%;
-  cursor: pointer;
+  top: 5vh;
+      left: 0.4vw;
+      position: absolute;
+      z-index: 2;
+      -webkit-transform: rotate(-16deg);
+      transform: rotate(-16deg);
+      font-size: .9vh;
+      cursor: pointer;
+      text-indent: 0;
 
 }
 
 .click2{
   position: absolute;
-    top: 45.7%;
-    right: 25.4%;
-    transform: rotate(-34deg);
-    font-size: 14px;
-    cursor: pointer;
+  bottom: 41%;
+  left: 15%;
+  -webkit-transform: rotate(-34deg);
+  transform: rotate(-9deg);
+  font-size: 1.4vh;
+  cursor: pointer;
+  text-indent: 0px;
+
+}
+
+.wrapper1{
+  margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+}
+
+.test{
+  width: 21%;
+height: 13vh;
+background: red;
+left: 35%;
+position: absolute;
+}
+.button2 {
+  border-radius: 3em;
+  border-color: #e53a40;
+  color: #fff;
+  background-image: -webkit-linear-gradient(left, rgba(26, 188, 156, 0.6), rgba(26, 188, 156, 0.6) 5%, #BC1A28 5%, #145ae5 10%, rgba(26, 188, 156, 0.6) 10%, rgba(26, 188, 156, 0.6) 15%, #1abc9c 15%, #DEFF14 20%, rgba(26, 188, 156, 0.6) 20%, rgba(26, 171, 156, 0.6) 25%, #145ae5 25%, #BF09E0 30%, rgba(26, 188, 156, 0.6) 30%, rgba(26, 188, 156, 0.6) 30%, #BC1A18 35%, #1abc9c 40%, rgba(26, 188, 156, 0.6) 40%, rgba(26, 188, 156, 0.6) 45%, #deff07 49%, #BF09EE 50%, rgba(26, 188, 156, 0.6) 50%, rgba(26, 188, 156, 0.6) 55%, #1ABC9E 55%, #BC1A16 60%, rgba(26, 188, 156, 0.6) 60%, rgba(26, 188, 156, 0.6) 65%, #deff07 65%, #bc1a2a 70%, rgba(26, 188, 156, 0.6) 70%, rgba(26, 188, 156, 0.6) 75%, #bc1a2a 75%, #bf09f2 80%, rgba(26, 188, 156, 0.6) 80%, rgba(26, 188, 156, 0.6) 85%, #1abc9c 85%, #deff07 90%, rgba(26, 188, 156, 0.6) 90%, rgba(26, 188, 156, 0.6) 95%, #BF09F1 95%, #1abc9c 100%);
+  background-position: 0 0;
+  background-size: 47%;
+  -webkit-transition: background 300ms ease-in-out;
+transition: background 800ms ease-in-out;
+position: absolute;
+left: 5vw;
+height: 5vw;
+width: 5vw;
+z-index: 2;
+top: 13vw;
+font-size: 1.2vw;
+font-weight: 900;
+color: darkblue;
 
 
+}
+.button2:hover {
+  background-position: 100px;
+}
+
+.button3{
+  border-radius: 3em;
+  border-color: #e53a40;
+  color: #fff;
+  background-image: -webkit-linear-gradient(left, rgba(26, 188, 156, 0.6), rgba(26, 188, 156, 0.6) 5%, #BC1A28 5%, #145ae5 10%, rgba(26, 188, 156, 0.6) 10%, rgba(26, 188, 156, 0.6) 15%, #1abc9c 15%, #DEFF14 20%, rgba(26, 188, 156, 0.6) 20%, rgba(26, 171, 156, 0.6) 25%, #145ae5 25%, #BF09E0 30%, rgba(26, 188, 156, 0.6) 30%, rgba(26, 188, 156, 0.6) 30%, #BC1A18 35%, #1abc9c 40%, rgba(26, 188, 156, 0.6) 40%, rgba(26, 188, 156, 0.6) 45%, #deff07 49%, #BF09EE 50%, rgba(26, 188, 156, 0.6) 50%, rgba(26, 188, 156, 0.6) 55%, #1ABC9E 55%, #BC1A16 60%, rgba(26, 188, 156, 0.6) 60%, rgba(26, 188, 156, 0.6) 65%, #deff07 65%, #bc1a2a 70%, rgba(26, 188, 156, 0.6) 70%, rgba(26, 188, 156, 0.6) 75%, #bc1a2a 75%, #bf09f2 80%, rgba(26, 188, 156, 0.6) 80%, rgba(26, 188, 156, 0.6) 85%, #1abc9c 85%, #deff07 90%, rgba(26, 188, 156, 0.6) 90%, rgba(26, 188, 156, 0.6) 95%, #BF09F1 95%, #1abc9c 100%);
+  background-position: 0 0;
+  background-size: 47%;
+  -webkit-transition: background 300ms ease-in-out;
+transition: background 800ms ease-in-out;
+position: absolute;
+left: 3vw;
+height: 7vw;
+width: 7vw;
+z-index: 2;
+top: 10vw;
+font-size: 1.2vw;
+font-weight: 900;
+color: darkblue;
+
+}
+
+.button3:hover {
+  background-position: 100px;
+}
+input{
+  width: 5vw;
+  position: relative;
+left: 0vw;
+top: 5vh;
+z-index: 2;
+
+}
+.four-in{
+  top: 10.7vw;
+  position: absolute;
+  left: 8vw;
+  width: 7vw;
+  height: 2vw;
+  font-size: 1vw;
+}
+.passput{
+  position: absolute;
+  top: 11vw;
+  font-size: 2vw;
+  font-weight: 900;
+  left: -9.3vw;
+color: dimgray;
+}
+
+.three-in {
+  top: 7.7vw;
+  position: absolute;
+  left: 8vw;
+  width: 7vw;
+  height: 2vw;
+  font-size: 1vw;
+}
+
+.userput{
+  position: absolute;
+  top: 8vw;
+  font-size: 2vw;
+  font-weight: 900;
+  left: -9.3vw;
+}
+
+.two-in{
+  top: 4.3vw;
+  position: absolute;
+  left: 5vw;
+  width: 10vw;
+  height: 2vw;
+  font-size: 1vw;}
+
+.mailput{
+  top: 26%;
+  position: absolute;
+  left: -12vw;
+  font-size: 2vw;
+  font-weight: 900;
+}
+
+.mailput2{
+  position: absolute;
+  top: 37%;
+  left: 7vw;
+  width: 6vw;
+  height: 2vw;
+  font-size: 1vw;
+}
+.one-in{
+  position: absolute;
+      top: 8%;
+      left: 5vw;
+      width: 10vw;
+      height: 2vw;
+      font-size: 1vw;
+}
+
+.namep{
+  position: absolute;
+  top: 36vh;
+  top: 11%;
+  font-size: 2vw;
+  font-weight: 900;
+  left: -3vw;
+  width: 12%;
+}
+
+.loglogo{
+  width: 14vw;
+position: relative;
+left: 43vw;
+height: 15vh;
+z-index: 1;
+top: 22vh;
+transform: rotate(-1deg);
+}
+
+.loglogo2{
+  width: 83%;
+  height: 93%;
+  z-index: 2;
+  position: absolute;
+  top: 10%;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  left: 11%;
+}
+
+.pass{
+  position: absolute;
+  top: 36vh;
+  top: 39%;
+  font-size: 2vw;
+  font-weight: 900;
+  left: -4vw;
+  width: 12%;
+}
+.use{
+  position: absolute;
+  top: 36vh;
+  top: 13%;
+  font-size: 2vw;
+  font-weight: 900;
+  left: -4vw;
+  width: 12%;
+}
+
+.useput2{
+  position: absolute;
+  top: 12%;
+      left: 7vw;
+      width: 6vw;
+      height: 2vw;
+      font-size: 1vw;
 }

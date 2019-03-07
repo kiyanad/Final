@@ -16,7 +16,9 @@ import NewBook from "./Components/NewBook"
 import Home from "./Components/Home"
 
 
-
+function clicked() {
+window.sessionStorage.clear()
+}
 
 const link = {
   width: '100px',
@@ -30,7 +32,7 @@ const link = {
 
 
 const Navbar = () =>
-  <div>
+  <div className="bar">
     <NavLink
       to="/"
       /* set exact so it knows to only set activeStyle when route is deeply equal to link */
@@ -43,14 +45,7 @@ const Navbar = () =>
         background: 'red'
       }}
     >Home</NavLink>
-    <NavLink
-      to="/login"
-      exact
-      style={link}
-      activeStyle={{
-        background: 'darkblue'
-      }}
-    >Login</NavLink>
+
     <NavLink
       to="/habits"
       exact
@@ -91,15 +86,39 @@ const Navbar = () =>
         background: 'darkblue'
       }}
     >New Book</NavLink>
+    <NavLink
+      to="/login"
+      exact
+      style={link}
+      activeStyle={{
+        background: 'darkblue'
+      }}
+      onClick={clicked}
+    >Logout</NavLink>
   </div>;
+
+  const Navbar2 = () =>
+    <div className="bar">
+
+      <NavLink
+        to="/login"
+        exact
+        style={link}
+        activeStyle={{
+          background: 'darkblue'
+        }}
+      >SignUp/Login</NavLink>
+
+    </div>;
 
 
 // ReactDOM.render(<App />, document.getElementById('root'));
 ReactDOM.render((
   <Router>
     <React.Fragment>
-    <Navbar />
-      <Route exact path="/" component={Index} />
+
+    {window.sessionStorage.length == 0 ? <Navbar2 /> : <Navbar />}
+    <Route exact path="/" component={Index} />
       <Route exact path="/habits" component={HabitTracker} />
       <Route exact path="/book" component={Book} />
       <Route exact path="/lasts" component={Last} />

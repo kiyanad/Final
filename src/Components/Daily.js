@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import '../CSS/Daily.css';
-import OneLast from "./OneLast"
 
 class Daily extends Component {
   render() {
@@ -82,12 +81,12 @@ class Daily extends Component {
             </div>
             <div class="expenses">
               <h4>Weekly Expenses</h4>
-              <div class="expenses__box"><span class="expenses__title">🏠</span><span class="expenses__amount">$ 400</span></div>
-              <div class="expenses__box"><span class="expenses__title">📝</span><span class="expenses__amount">$ 120</span></div>
-              <div class="expenses__box"><span class="expenses__title">🍟</span><span class="expenses__amount">$ 175</span></div>
-              <div class="expenses__box"><span class="expenses__title">🚆</span><span class="expenses__amount">$ 42</span></div>
-              <div class="expenses__box"><span class="expenses__title">📽️</span><span class="expenses__amount">$ 520</span></div>
-              <div class="expenses__box"><span class="expenses__title">💸</span><span class="expenses__amount">$ 200</span></div>
+              <div class="expenses__box"><span class="expenses__title"></span>🏠<span class="expenses__amount">$ 400</span></div>
+              <div class="expenses__box"><span class="expenses__title"></span>📝<span class="expenses__amount">$ 120</span></div>
+              <div class="expenses__box"><span class="expenses__title"></span>🍟<span class="expenses__amount">$ 175</span></div>
+              <div class="expenses__box"><span class="expenses__title"></span>🚆<span class="expenses__amount">$ 42</span></div>
+              <div class="expenses__box"><span class="expenses__title"></span>📽️<span class="expenses__amount">$ 520</span></div>
+              <div class="expenses__box"><span class="expenses__title"></span>💸<span class="expenses__amount">$ 200</span></div>
               <div class="savings"><span class="expenses__title">Savings:</span><span class="expenses__amount">$ 145</span></div>
             </div>
             <div class="picture">
@@ -138,7 +137,7 @@ class Daily extends Component {
               <div class="tracker__bubble"></div>
               <div class="tracker__bubble"></div>
               <div class="tracker__bubble"></div>
-              <div class="tracker__title">📖 Read</div>
+              <div class="tracker__title">Read</div>
               <div class="tracker__bubble"></div>
               <div class="tracker__bubble"></div>
               <div class="tracker__bubble"></div>
@@ -146,7 +145,7 @@ class Daily extends Component {
               <div class="tracker__bubble"></div>
               <div class="tracker__bubble"></div>
               <div class="tracker__bubble"></div>
-              <div class="tracker__title">🍺 No Alcohol</div>
+              <div class="tracker__title"> No Alcohol</div>
               <div class="tracker__bubble"></div>
               <div class="tracker__bubble"></div>
               <div class="tracker__bubble"></div>
@@ -159,9 +158,7 @@ class Daily extends Component {
         </div>
       </div>
       <aside class="context">
-        <div class="explanation">Continuation of this <a href="https://codepen.io/oliviale/full/bLYQQE" target="_blank">Moleskine pen</a>.<br/>Part of the  <a href="https://codepen.io/collection/DQvYpQ" target="_blank">CSS Grid collection here</a>.</div>
       </aside>
-      <footer><a href="https://twitter.com/meowlivia_" target="_blank"><i class="icon-social-twitter icons"></i></a><a href="https://github.com/oliviale" target="_blank"><i class="icon-social-github icons"></i></a><a href="https://dribbble.com/oliviale" target="_blank"><i class="icon-social-dribbble icons"></i></a></footer>      sadesfrd
       </div>
 
     )

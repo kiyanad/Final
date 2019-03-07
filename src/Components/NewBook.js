@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import "../CSS/NewBook.css"
 import $ from 'jquery'
+import { Redirect } from 'react-router';
+
+
 
 class NewBook extends Component {
   state ={
-    title: "",
-    shortitle: "",
+    added: false,
     author: ""
   }
   componentDidMount(){
@@ -36,6 +38,7 @@ this.setState ({
   fetch("http://localhost:3000/api/v1/user_books", {
     method: 'POST',
     headers:{
+      Authorization: `Bearer ${window.sessionStorage.accessToken}`,
       'Accept': 'application/json',
       'Content-Type': 'application/json'
       },
@@ -47,7 +50,16 @@ this.setState ({
       status: false
       }),
     }).then(res => res.json())
-      .then(response => console.log(response))
+      // .then(response => console.log(response))
+this.setState({
+  added: true
+})
+}
+
+added =() => {
+  if(this.state.added){
+      return <Redirect to="/book" push/>
+    }
 }
 
 
@@ -56,16 +68,20 @@ this.setState ({
 
 
   render(){
+    if (window.sessionStorage.length == 0) {
+        return <Redirect to={'/login'} />;
+    }
 
     return(
       <div>
+      {this.added()}
         <div className="wrapper">
           <h2>NEXT ON THE LIST...</h2>
           <form onSubmit= {(e)=> {this.clickHandler(e)}}>
           Short Title:<input type="text" id="title" placeholder="Short Book Title" /><br />
           Full Title:<input type="text" id="title2" placeholder="Book Title" /> <br />
           Author:<input type="text" id="author" placeholder="Book Author" /> <br />
-          <button > Submit </button>
+          <button className="button4" > Submit </button>
           </form>
 
         </div>

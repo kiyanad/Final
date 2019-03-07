@@ -5,6 +5,8 @@ import differenceInDays from 'date-fns/difference_in_days'
 
 
 function Box(props){
+
+
     const monthStart = dateFns.startOfMonth(props.month);
 
     const monthEnd = dateFns.endOfMonth(monthStart);
@@ -16,12 +18,11 @@ function Box(props){
 
     let monthLength = Array.from({length: result}, (x,i) => i);
 
-    let eachDay = monthLength.map(day => <BigBox key={day} day= {day} monthNum={props.monthNum} userhabits={props.userhabits} habit={props.habit} allHabits={props.allHabits}/>)
-// debugger
+    let eachDay = monthLength.map(day => <BigBox instance={props.instance} key={day} day= {day} monthNum={props.monthNum} userhabits={props.userhabits} habit={props.habit} allHabits={props.allHabits} selected={props.selected}/>)
     let day = monthStart;
 
   return (
-    <div className="row" key={day}>
+    <div className="row" id= {props.habit.name}key={day}>
       {eachDay}
     </div>
   )

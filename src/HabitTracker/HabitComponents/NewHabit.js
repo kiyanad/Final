@@ -7,14 +7,19 @@ class NewHabit extends Component {
     status: "",
     date: "",
     selected: false,
-    habit: []
+    habits: []
   }
 
 componentDidMount(){
-  fetch("http://localhost:3000/api/v1/habits")
+  fetch("http://localhost:3000/api/v1/user_habits", {
+  method: 'GET',
+  headers: {
+    Authorization: `Bearer ${window.sessionStorage.accessToken}`
+  }
+})
   .then(res=>res.json())
   .then(habits => this.setState({
-    habits: habits.habit
+    habits: habits.user_habit
   })
   )
 
@@ -40,7 +45,8 @@ clickHandler = (event) => {
 // FOR PATCH FETCH //
 var date = this.props.date + "-" + event.target.innerText
 console.log(this.props.date);
-  let habit_id = this.props.habit.id
+  let habit_id = this.props.habit.habit_id
+  // debugger
   // console.log(habit_id);
   let status = this.state.selected
   // console.log(date);
@@ -50,13 +56,16 @@ console.log(this.props.date);
   fetch("http://localhost:3000/api/v1/user_instances", {
     method: 'POST',
     headers:{
+      Authorization: `Bearer ${window.sessionStorage.accessToken}`,
       'Accept': 'application/json',
       'Content-Type': 'application/json'
       },
     body: JSON.stringify({
-      user_habit_id: `${habit_id}`,
-      status:this.state.selected,
-      date:this.props.date
+      user_instance:
+      { user_habit_id: "2",
+      status: this.state.selected,
+      date: this.props.date
+    }
       }),
     }).then(res => res.json())
       .then(response => console.log(response))
@@ -65,21 +74,23 @@ console.log(this.props.date);
 //END OF CLICKHANDLER //
 
   render(){
-    // console.log(this.state.habits);
-
     // debugger
+    console.log(this.props.habit.habit.name);
+
     // console.log(this.props.date);
     var date = this.props.date
 // console.log(date);
 // GETS HABIT NAME //
   if(this.state.habits !== undefined){
     // debugger
-    var habitName = this.state.habits.find(habit => habit.id === this.props.habit.habit_id)
+    var habitName = this.props.habit.habit.name
+    // debugger
   }
+
   // END OF HABITS NAME //
     return(
-      <div>
-        {habitName !== undefined ? <div><p className="pname"> {habitName.name}: </p> <div id={`checked-${this.props.habit.id}`} className="checked" onClick={this.clickHandler} /> <br /></div> : null }
+      <div className="spacer">
+        {habitName !== undefined ? <div><p className="pname"> {habitName}: </p> <div id={`checked-${this.props.habit.habit.id}`} className="checked" onClick={(event)=>this.props.new(event, this.props.habit.habit_id)} /> <br /></div> : null }
       </div>
     )
   }

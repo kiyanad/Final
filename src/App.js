@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 // import './App.css';
 // import Last from "./Components/Last"
 import NewBook from "./Components/NewBook"
 
 
 
-import Calendar from "./Components/NewBook"
 
 class App extends Component {
 

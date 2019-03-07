@@ -52,16 +52,15 @@ body {
   color: #644cad;
   font-weight: 400;
   font-family: BookFont2;
-font-size: 101px;
-position: relative;
-top: 88px;
-left: -116px;
+  font-size: 7vw;
+  position: relative;
+  top: 2vw;
+  left: -28vw;
 }
 .wrapper input {
   padding: 12px;
 font-size: 28px;
 min-width: 200px;
-position: relative;
 top: -8px;
 font-family: BookFont2;
 margin-left: 13px;
@@ -77,13 +76,13 @@ margin-left: 13px;
   -webkit-transform: skew(30deg, 0deg) rotate(-15deg);
   transform: skew(30deg, 0deg) rotate(-15deg);
   position: relative;
-  top: -124px;
-  left: 352px;
+  top: -26vw;
+  left: -4vw;
 
 }
 .newbook .cover {
-  height: 462px;
-  width: 486px;
+  height: 29vw;
+      width: 30vw;
   background-color: #FFF;
   display: flex;
   flex-direction: column;
@@ -120,8 +119,8 @@ margin-left: 13px;
   background: linear-gradient(45deg, #c4c4c4, #EEE);
 }
 .newbook .spine {
-  height: 462px;
-  width: 40px;
+  height: 29vw;
+  width: 2.5vw;
   display: flex;
   position: relative;
   overflow: hidden;
@@ -177,10 +176,10 @@ margin-left: 13px;
 
 form{
   position: relative;
-  top: -93px;
-  left: 1037px;
+  top: -22vw;
+  left: 31vw;
   font-family: BookFont2;
-  font-size: 53px;
+  font-size: 4vw;
 }
 
 .newImg{
@@ -190,4 +189,31 @@ form{
   left: 80px;
   z-index: 2;
   height: 162px;
+}
+
+.button4{
+
+    border-radius: 3em;
+    border-color: #e53a40;
+    color: #fff;
+    background-image: -webkit-linear-gradient(left, rgba(26, 188, 156, 0.6), rgba(26, 188, 156, 0.6) 5%, #BC1A28 5%, #145ae5 10%, rgba(26, 188, 156, 0.6) 10%, rgba(26, 188, 156, 0.6) 15%, #1abc9c 15%, #DEFF14 20%, rgba(26, 188, 156, 0.6) 20%, rgba(26, 171, 156, 0.6) 25%, #145ae5 25%, #BF09E0 30%, rgba(26, 188, 156, 0.6) 30%, rgba(26, 188, 156, 0.6) 30%, #BC1A18 35%, #1abc9c 40%, rgba(26, 188, 156, 0.6) 40%, rgba(26, 188, 156, 0.6) 45%, #deff07 49%, #BF09EE 50%, rgba(26, 188, 156, 0.6) 50%, rgba(26, 188, 156, 0.6) 55%, #1ABC9E 55%, #BC1A16 60%, rgba(26, 188, 156, 0.6) 60%, rgba(26, 188, 156, 0.6) 65%, #deff07 65%, #bc1a2a 70%, rgba(26, 188, 156, 0.6) 70%, rgba(26, 188, 156, 0.6) 75%, #bc1a2a 75%, #bf09f2 80%, rgba(26, 188, 156, 0.6) 80%, rgba(26, 188, 156, 0.6) 85%, #1abc9c 85%, #deff07 90%, rgba(26, 188, 156, 0.6) 90%, rgba(26, 188, 156, 0.6) 95%, #BF09F1 95%, #1abc9c 100%);
+    background-position: 0 0;
+    background-size: 47%;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background 12800ms ease-in-out;
+    position: absolute;
+    left: 7vw;
+    height: 5vw;
+    width: 26vw;
+    z-index: 2;
+    top: 18vw;
+    font-size: 1.2vw;
+    font-weight: 900;
+    color: darkblue;
+
+
+
+}
+.button4:hover {
+  background-position: 10021px;
 }

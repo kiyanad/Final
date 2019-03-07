@@ -12,11 +12,7 @@ class Form extends Component {
     userhabits: []
   }
 
-componentDidMount(){
-  this.setState({
-    userhabits: this.props.allHabits
-  })
-}
+
 
   changeHandler = (e) => {
   // debugger
@@ -42,17 +38,16 @@ addHabit = (e) => {
 }
 
   render() {
-    console.log(this.state);
-    console.log(this.props);
+    // console.log(this.state);
+    // console.log(this.props);
     return (
-      <div>
-<div  />
+      <div className="habCon">
 
-<form  className="habitform" onSubmit= {(e)=>{this.addHabit(e, this.state)}}>
+<form  className="habitform" onSubmit= {(e)=>{this.props.addHabit(e, this.state)}}>
 New Habit Form!!! <br /> <br />
 Habit Name: <br /><input className="nameput" onChange= {this.changeHandler} name = "name" placeholder="Name"  /> <br />
 
-<button> Submit </button>
+<button className="habBut"> Submit </button>
 </form>
 
     </div>

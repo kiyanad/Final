@@ -4,9 +4,9 @@ import OneLast from "./OneLast"
 
 class Last extends Component {
 
-  render() {var i = 1
-    let list = this.props.uLasts.map(last => <OneLast last={last} all={this.props.lasts} uInst={this.props.uInst} i={i}/>)
-    i++
+  render() {
+    // let list = this.props.uLasts.map(last => <OneLast last={last} all={this.props.lasts} uInst={this.props.uInst} i={i}/>)
+
     return (
       <div className="back">
       <img src= "https://clipartstation.com/wp-content/uploads/2018/09/cork-board-clipart-6.jpg" alt="" />
@@ -18,7 +18,7 @@ class Last extends Component {
   <input class="paper-date" name="date" placeholder="02/15/2019" type="text" />
   <section class="paper-content">
 <h1>When Did I Last...</h1>
-{list}
+<OneLast />
 
 
 

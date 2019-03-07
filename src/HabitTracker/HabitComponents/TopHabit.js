@@ -21,9 +21,17 @@ componentDidMount(){
 }
 
   render() {
+    const list = {
+      0: { code: "Green", label: "Completed 👍" },
+      1: { code: "Red", label: "Not Completed 👎" },
+      2: { code: "Black", label: "Missed Day 😞" },
+      3: { code: "White", label: "Remove 🚫" },
+
+    };
     return (
       <div>
         <span id={`color-${this.props.choice.num}`} mood={this.props.choice.num} onClick={this.props.clickHandler} />
+        <p> {list[this.props.choice.num].label} </p>
       </div>
     )
 
